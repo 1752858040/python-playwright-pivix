@@ -5,6 +5,8 @@ WORKDIR /app
  
 ADD . .
 
+RUN mkdir origin && mkdir output
+
 RUN pip install playwright openpyxl
 
 RUN playwright install
